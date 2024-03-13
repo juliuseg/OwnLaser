@@ -17,3 +17,5 @@ class Mirror {
     }
 
 }
+
+//TODO Make more mirror types that have different attributes. Maybe a superclass for all tiles? Or an interface?

@@ -7,6 +7,8 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import javax.swing.JPanel;
 
+//TODO Add assets for the mirros and laser
+
 public class Game extends JPanel {
     private final Board board;
 
@@ -23,6 +25,8 @@ public class Game extends JPanel {
         }
 
 
+        //TODO Make mouse and keyboard listeners more modular somehow
+        //TODO Make the board draw the toolbar with the mirros and laser. Make a class for this or use board?
 
         addMouseListener(new MouseAdapter() {
             @Override

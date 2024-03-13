@@ -41,6 +41,9 @@ class Board {
         selectedTile = new Mirror(mirrorImage);
     }
 
+    //TODO Make a laser class so we can draw the laser on the board.
+    //TODO Draw the Laser when the player wants to test the level.
+
     public void setGhostTilePosition(int x, int y) {
         this.ghostTilePosition = getTile(x, y);
     }
@@ -68,7 +71,6 @@ class Board {
 
 
     public Point getTile(int x, int y) {
-        System.out.println("Tile clicked: " + boardSize + " and " + y / squareSize);
 
         return new Point(Math.min(x / squareSize,boardSize-1),  Math.min(y / squareSize,boardSize-1));
     }
