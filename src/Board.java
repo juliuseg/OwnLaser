@@ -30,7 +30,7 @@ class Board {
         this.squareSize = squareSize;
         try {
             this.tileImage = ImageIO.read(new File("src/assets/empty.png"));
-            this.mirrorImage = ImageIO.read(new File("src/assets/mirror.png"));
+            this.mirrorImage = ImageIO.read(new File("src/assets/doubleMirror.png"));
         } catch (IOException e) {
             e.printStackTrace();
             JOptionPane.showMessageDialog(null, "Could not load image file!", "Error", JOptionPane.ERROR_MESSAGE);
